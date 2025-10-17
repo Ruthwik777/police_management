@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Officer Details</title>
+</head>
+<body>
+    <h1>Police Officer Details</h1>
+
+    {% if officer %}
+        <p><b>Badge Number:</b> {{ officer.badgeNumber }}</p>
+        <p><b>Name:</b> {{ officer.name }}</p>
+        <p><b>Rank:</b> {{ officer.rank }}</p>
+        <p><b>Contact Number:</b> {{ officer.contactNumber }}</p>
+    {% else %}
+        <p>No officer found!</p>
+    {% endif %}
+
+    <a href="/">Go Back</a>
+</body>
+</html>
