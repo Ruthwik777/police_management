@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Police Management System</title>
+</head>
+<body>
+    <h1>Police Management System</h1>
+
+    <h2>Add Officer</h2>
+    <form action="/add" method="post">
+        Badge Number: <input type="number" name="badgeNumber" required><br>
+        Name: <input type="text" name="name" required><br>
+        Rank: <input type="text" name="rank" required><br>
+        Contact: <input type="text" name="contactNumber" required><br>
+        <button type="submit">Add</button>
+    </form>
+
+    <hr>
+
+    <h2>Search Officer</h2>
+    <form action="/search" method="post">
+        Badge Number: <input type="number" name="badgeNumber" required>
+        <button type="submit">Search</button>
+    </form>
+
+    <hr>
+
+    <h2>Update Officer</h2>
+    <form action="/update" method="post">
+        Badge Number: <input type="number" name="badgeNumber" required><br>
+        New Name: <input type="text" name="name" required><br>
+        New Rank: <input type="text" name="rank" required><br>
+        New Contact: <input type="text" name="contactNumber" required><br>
+        <button type="submit">Update</button>
+    </form>
+
+    <hr>
+
+    <h2>Delete Officer</h2>
+    <form action="/delete" method="post">
+        Badge Number: <input type="number" name="badgeNumber" required>
+        <button type="submit">Delete</button>
+    </form>
+
+    <hr>
+
+    <a href="/list">View All Officers</a>
+</body>
+</html>
